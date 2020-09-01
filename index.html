@@ -3,32 +3,32 @@
   <head>
      <title>Форма обратной связи</title>
      <meta charset="utf-8">
+     <link href="CSS/style.css" rel="stylesheet">
   </head>
   <body>
     <main>
         <fieldset>
           <legend>Форма обратной связи</legend>
-          <label for="name">Ваше имя</label>
-          <input type="text" id="name" name="name" placeholder="Введите ваше имя" autocomplete="off">
-          <label for="tel">Номер телефона</label>
-          <input type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Формат номера X-XXX-XXX">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" autocomplete="on">
-          <div class="two-third-width">
-            <label for="job">Ваша специальность</label>
-            <select id="job" name="job">
+            <form>
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="name" placeholder="Введите ваше имя" autocomplete="off">
+              <label for="tel">Номер телефона</label>
+              <input type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Формат номера X-XXX-XXX">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="on">
+              <label for="job">Ваша специальность</label>
+              <select id="job" name="job">
                 <option value="Designer">Дизайнер</option>
                 <option value="planner">Проектировщик</option>
                 <option value="program">Разработчик</option>
                 <option value="admin">Системный администратор</option>
                 <option value="buh">Бухгалтер</option>
-            </select>
-          </div>
-        </fieldset>
+              </select>
         <div class="buttons">
           <input type="submit" value="Оставить заявку">
         </div>
       </form>
+      </fieldset>
     </main>
   </body>
 </html>
